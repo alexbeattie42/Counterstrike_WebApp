@@ -6,7 +6,7 @@
   <head>
     <title>Players</title>
    
-</style>
+
 <?php
 require 'header.php';
 include'menu.php';?>
@@ -15,12 +15,12 @@ include'menu.php';?>
       <section>
 
       
-<div class="container">
-    <div class="row">
-    <?php include './queries/users.php';?>
-       
-    </div>
-</div>
+        <div class="container">
+            <div class="row">
+            <?php include './queries/users.php';?>
+            
+            </div>
+        </div>
 
       </section>
     </div>

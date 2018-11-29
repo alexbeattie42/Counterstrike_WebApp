@@ -17,9 +17,7 @@ include'menu.php';?>
 <!-- <?php include 'dbconn.php';?> -->
 
       <section>
-      <div align="center">
-    <h1>Currently tracking <a href="./players.html">67 players</a> across <a href="./matches.html">49 matches</a>.</h1>
-</div>
+        <?php include './queries/numplayers.php'?>
 
       </section>
     </div>
