@@ -42,7 +42,14 @@ table.highlight>tbody>tr:hover {
 
     <table class="col s12 bordered highlight grey lighten-3 black-text text-darken-2">
             
-            <?php include './queries/matchlist.php';?>
+            <?php
+            require './queries/dbconn.php';
+            $sql = "SELECT avg(Rounds) as avg FROM test.`match` ";
+            $result = $conn->query($sql)->fetch_assoc();
+            echo 'Average Number of Rounds Per Match: '.$result['avg'].' ';
+
+            
+            include './queries/matchlist.php';?>
         
  
     </table>
