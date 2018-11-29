@@ -41,14 +41,12 @@ table.highlight>tbody>tr:hover {
 <div align="center" class="matchresult">
 
     <table class="col s12 bordered highlight grey lighten-3 black-text text-darken-2">
-            <!-- <caption>October, 2018</caption> -->
             
             <?php include './queries/matchlist.php';?>
         
-  
-    
+ 
     </table>
-</table></div>
+</div>
 
       </section>
     </div>

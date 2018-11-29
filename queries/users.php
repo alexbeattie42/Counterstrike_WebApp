@@ -17,7 +17,7 @@ if ($num_rows > 0) {
         $row_cnt++;
         if(!empty($row["Name"])){
             echo '  <tr>
-            <th style="text-align: center"><a href="./players/'. $row["User_ID"] . '">'. $row["Name"].'</a></th>
+            <th style="text-align: center"><a href="./individualplayer.php?uid='. $row["User_ID"] . '">'. $row["Name"].'</a></th>
                  </tr>';
         }
     }
