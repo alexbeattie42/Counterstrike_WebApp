@@ -506,10 +506,6 @@ $conn->close();
   </form>
   <a id="delete" class="button " class="button" href="./queries/deleteuser.php?uid='.$uid.'">Delete User</a>
 
-
-   
-
-  </div>
 </div>';
 ?>
 <script>
