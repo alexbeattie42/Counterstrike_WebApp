@@ -41,7 +41,7 @@ include'menu.php';?>
             <form action="./queries/searchuserbyname.php">
             Search By Username: 
             <input type="text" name="userName" value="">
-            <input class="button" type="submit" value="Submit">
+            <input class="button" type="submit" value="Search">
           
             </form>
           
