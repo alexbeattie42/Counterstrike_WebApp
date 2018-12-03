@@ -1,7 +1,7 @@
 <?php 
 require 'dbconn.php';
 $username = $_GET['userName'];
-$sql = "SELECT User_ID FROM  Player Where Name LIKE '%$username%'";
+$sql = "SELECT User_ID FROM  `Player` Where Name LIKE '%$username%'";
 $result = $conn->query($sql);
 if($result){
     $row = $result->fetch_assoc();

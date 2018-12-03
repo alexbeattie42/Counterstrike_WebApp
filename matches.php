@@ -44,7 +44,7 @@ table.highlight>tbody>tr:hover {
             
             <?php
             require './queries/dbconn.php';
-            $sql = "SELECT avg(Rounds) as avg FROM test.`match` ";
+            $sql = "SELECT avg(Rounds) as avg FROM `Match` ";
             $result = $conn->query($sql)->fetch_assoc();
             echo 'Average Number of Rounds Per Match: '.$result['avg'].' ';
 

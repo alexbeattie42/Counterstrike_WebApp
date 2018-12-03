@@ -5,9 +5,9 @@
 
 $uid = $_GET['uid'];
 require './queries/dbconn.php';
-$sql = "SELECT s.Title, s.Value, p.Name, p.Photo FROM statistics as s
-INNER JOIN stat_types as st on st.T_ID = s.Type
-INNER JOIN player as p on s.User_ID = p.User_ID
+$sql = "SELECT s.Title, s.Value, p.Name, p.Photo FROM  `Statistics` as s
+INNER JOIN `Stat_Types` as st on st.T_ID = s.Type
+INNER JOIN `Player` as p on s.User_ID = p.User_ID
  WHERE s.User_ID = '$uid' and st.Stat_Type = 'Player_Stat'
 and s.Title != 'Weapon_Stat'";
 

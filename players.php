@@ -33,9 +33,7 @@ include'menu.php';?>
         <div class="container">
             <div class="row">
             <?php 
-            require './queries/dbconn.php';
-            $sql = "SELECT avg(Rounds) as avg FROM test.`match` ";
-            $result = $conn->query($sql)->fetch_assoc();
+           
             echo'
             <div id="search" class="col s12 ">
             <form action="./queries/searchuserbyname.php">

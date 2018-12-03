@@ -4,9 +4,9 @@ require 'dbconn.php';
 $sql_match = "SELECT m.Match_ID,m.MatchDate,m.Map, 
 ta.Name as ta_name, ta.RoundWins as ta_rw, tb.Name as tb_name, tb.RoundWins as tb_rw
  FROM `Match` as m
-INNER JOIN teams_in_match as tm ON tm.Match_ID = m.Match_ID
-INNER JOIN team as ta ON tm.TeamA_ID = ta.Team_ID
-INNER JOIN team as tb on tm.TeamB_ID = tb.Team_ID
+INNER JOIN `Teams_In_Match` as tm ON tm.Match_ID = m.Match_ID
+INNER JOIN `Team` as ta ON tm.TeamA_ID = ta.Team_ID
+INNER JOIN `Team` as tb on tm.TeamB_ID = tb.Team_ID
  ORDER BY m.MatchDate DESC";
 
 $match_result = $conn->query($sql_match);

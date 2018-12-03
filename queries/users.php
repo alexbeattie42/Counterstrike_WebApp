@@ -1,6 +1,6 @@
 <?php 
 require 'dbconn.php';
-$sql = "SELECT User_ID, Name FROM Player ORDER BY Name ASC ";
+$sql = "SELECT User_ID, Name FROM `Player` ORDER BY Name ASC ";
 $result = $conn->query($sql);
 
 $num_rows = $result->num_rows;

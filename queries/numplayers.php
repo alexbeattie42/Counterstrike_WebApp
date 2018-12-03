@@ -1,6 +1,6 @@
 <?php 
 require 'dbconn.php';
-$sql_player_count = "SELECT Count(*) as total  FROM Player where Name IS NOT NULL";
+$sql_player_count = "SELECT Count(*) as total  FROM `Player` where Name IS NOT NULL";
 $sql_match_count = "SELECT Count(*) as total FROM `Match`";
 $player_count_result = $conn->query($sql_player_count)->fetch_assoc();
 $match_count_result = $conn->query($sql_match_count)->fetch_assoc();
