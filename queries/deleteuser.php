@@ -9,7 +9,7 @@ if($result){
 else{
     echo 'User not deleted. Redirecting Soon';
 }
-sleep(10);
+sleep(3);
 echo "<script>window.location = '../'</script>";
 
 ?>

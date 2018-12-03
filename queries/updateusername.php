@@ -10,7 +10,7 @@ if($result){
 else{
     echo 'User not updated. Redirecting Soon';
 }
-sleep(10);
+sleep(3);
 echo "<script>window.location = '../individualplayer.php?uid=$uid'</script>";
 
 ?>
